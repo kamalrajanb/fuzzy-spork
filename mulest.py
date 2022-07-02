@@ -14,10 +14,10 @@ cursor.execute("INSERT INTO MOVIES VALUES('Bigil','Vijay','Nayanthara','Atlee',2
 print("\n\t\t\t\tMOVIE DETAILS DATABASE\n")
 allData = cursor.execute("SELECT * FROM MOVIES").fetchall()
 for i in allData:
-    title, actor, actress, director, releasedYear = i
-    print("{t:<20}{a:<25}{ats:<25}{d:<25}{yr:<5}".format(t=title, a=actor, ats=actress, d=director, yr=releasedYear))
+    name, actor, actress, director, releasedYear = i
+    print("{na:<20}{a:<25}{ats:<25}{d:<25}{yr:<5}".format(na=name, a=actor, ats=actress, d=director, yr=releasedYear))
 print("\n\n\t\t\t\tACTOR QUERY\n")
 actorQuery = cursor.execute("SELECT * FROM MOVIES WHERE ACTOR = 'Vijay'").fetchall()
 for i in actorQuery:
-    title, actor, actress, director, releasedYear = i
-    print("{t:<20}{a:<25}{ats:<25}{d:<25}{yr:<5}".format(t=title, a=actor, ats=actress, d=director, yr=releasedYear))
+    name, actor, actress, director, releasedYear = i
+    print("{na:<20}{a:<25}{ats:<25}{d:<25}{yr:<5}".format(na=name, a=actor, ats=actress, d=director, yr=releasedYear))
