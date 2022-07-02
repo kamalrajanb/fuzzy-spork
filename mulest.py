@@ -1,7 +1,7 @@
 import sqlite3
 connection = sqlite3.connect("moviedb.db")
 cursor = connection.cursor()
-cursor.execute("CREATE TABLE IF NOT EXISTS MOVIES( NAME TEXT, ACTOR TEXT, ACTRESS TEXT,DIRECTOR TEXT, YEAR INTEGER )")
+cursor.execute("CREATE TABLE IF NOT EXISTS MOVIES( Name TEXT, Actor TEXT, Actress TEXT,Director TEXT, Year INTEGER )")
 cursor.execute("INSERT INTO MOVIES VALUES('96','Vijay Sethupathi','Trisha','Premkumar',2018)")
 cursor.execute("INSERT INTO MOVIES VALUES('Karnan','Dhanush','Rajisha Vijayan','Mari Selvaraj',2021)")
 cursor.execute("INSERT INTO MOVIES VALUES('Kaththi','Vijay','Samantha Ruth Prabhu','A.R. Murugadoss',2014)")
