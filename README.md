@@ -1,2 +1,2 @@
 # fuzzy-spork
-Mulesoft Coding Test 
+Python code to retrive data from database based on condition
